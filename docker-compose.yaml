@@ -5,7 +5,7 @@ version: "2"
 services:
 
   scrapy:
-    image: khainguyen/scrapy:runtime
+    image: khainguyen95/scrapy:latest
     volumes:
         - ./crawl_info/:/crawl_info/
     hostname: scrapy
