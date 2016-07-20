@@ -1,0 +1,15 @@
+# khainguyen
+# docker-compose scrapy
+version: "2"
+
+services:
+
+  scrapy:
+    image: khainguyen/scrapy:runtime
+    volumes:
+        - ./crawl_info/:/crawl_info/
+    hostname: scrapy
+    cpu_shares: 512             
+    mem_limit: 1073741824
+
+    tty: true

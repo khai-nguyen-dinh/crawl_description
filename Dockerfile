@@ -1,3 +1,6 @@
+# khainguyen
+# Dockerfile
+#
 FROM ubuntu:14.04
 MAINTAINER khainguyen "khainguyenptiter@gmail.com"
 
@@ -8,8 +11,4 @@ RUN apt-get install -y libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev lib
 RUN pip install --upgrade six
 
 COPY requirements.txt /
-COPY 1 /
-COPY 2 /
-COPY 3 /
 RUN pip install -r /requirements.txt
-

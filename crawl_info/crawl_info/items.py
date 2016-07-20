@@ -9,4 +9,6 @@ import scrapy
 
 
 class CrawlInfoItem(scrapy.Item):
+    id = scrapy.Field()
     description = scrapy.Field()
+
